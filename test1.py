@@ -9,7 +9,7 @@ class TestMainFunction(unittest.TestCase):
 
     def test_main_with_test1_json(self):
         result = main(self.json_path)
-        expected_output = "Expected CSV output string here"
+        expected_output = "Features\r\nфамилия\r\nкласс\r\nподгруппа\r\nпредмет\r\nвидДеятельности"
 
         self.assertEqual(result.strip(), expected_output.strip())
 
